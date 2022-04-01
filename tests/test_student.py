@@ -5,7 +5,7 @@ def test_init():
     level = "sophomore"
     courses = ["mathematics", "foundations of computing"]
 
-    
+
     ada = Student(name, level, courses)
     ada_2 = Student(name, level)
 
@@ -45,3 +45,5 @@ def test_get_student_with_more_classes():
     )
 
     # TODO: write assertions
+    assert get_student_with_more_classes(charles, ada) == ada 
+    assert get_student_with_more_classes(ada, charles) == ada 
