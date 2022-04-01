@@ -7,10 +7,12 @@ def test_init():
 
     
     ada = Student(name, level, courses)
+    ada_2 = Student(name, level)
 
     assert ada.name == name
     assert ada.level == level
     assert ada.courses == courses
+    assert ada_2.courses == []
 
 def test_add_class():
     new_class = 'Intro to Feminism'
