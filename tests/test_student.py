@@ -5,6 +5,7 @@ def test_init():
     level = "sophomore"
     courses = ["mathematics", "foundations of computing"]
 
+    
     ada = Student(name, level, courses)
 
     assert ada.name == name
